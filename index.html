@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub – The Ultimate AI Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Signup Overlay (Blocks access until email is entered) -->
+    <div id="signup-overlay">
+        <div class="signup-box">
+            <h2>Sign Up to Access AI Hub</h2>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <button onclick="grantAccess()">Enter AI Hub</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <header>
+        <h1>Welcome to AI Hub</h1>
+        <p>The ultimate library for AI tools, courses, and more.</p>
+    </header>
+
+    <section class="hero">
+        <h2>Discover the Best AI Tools</h2>
+        <button class="cta-btn">Explore Now</button>
+    </section>
+
+    <section class="ai-library">
+        <h2>AI Library</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?technology,ai" alt="AI Tool">
+                <h3>ChatGPT</h3>
+                <p>Best AI for text generation.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?robot,ai" alt="AI Tool">
+                <h3>Midjourney</h3>
+                <p>Top AI for image creation.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/300x200/?coding,ai" alt="AI Tool">
+                <h3>CodeWhisperer</h3>
+                <p>AI-powered coding assistant.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 AI Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
