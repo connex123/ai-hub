@@ -3,57 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Hub – The Ultimate AI Library</title>
+    <title>AI Hub - The Ultimate AI Library</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <!-- Signup Overlay (Blocks access until email is entered) -->
-    <div id="signup-overlay">
-        <div class="signup-box">
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
             <h2>Sign Up to Access AI Hub</h2>
-            <input type="text" id="name" placeholder="Enter your Name" required>
-            <input type="email" id="email" placeholder="Enter your Email" required>
+            <input type="text" id="name" placeholder="Enter your Name">
+            <input type="email" id="email" placeholder="Enter your Email">
             <button onclick="grantAccess()">Enter AI Hub</button>
         </div>
     </div>
 
-    <!-- Main Content -->
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>AI Hub</h1>
+        <ul>
+            <li><a href="#library">AI Library</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#jobs">AI Jobs</a></li>
+            <li><a href="#voting">Vote</a></li>
+            <li><a href="#prompt-ai">Prompt AI</a></li>
+            <li><button id="toggle-theme">🌙 Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <header>
-        <h1>Welcome to AI Hub</h1>
-        <p>The ultimate library for AI tools, courses, and more.</p>
+        <h2>Discover the Best AI Tools</h2>
+        <button class="cta">Explore Now</button>
     </header>
 
-    <section class="hero">
-        <h2>Discover the Best AI Tools</h2>
-        <button class="cta-btn">Explore Now</button>
-    </section>
-
-    <section class="ai-library">
+    <!-- AI Library -->
+    <section id="library">
         <h2>AI Library</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://source.unsplash.com/300x200/?technology,ai" alt="AI Tool">
+        <div class="filter-bar">
+            <button>All</button>
+            <button>Free</button>
+            <button>Paid</button>
+            <button>Trending</button>
+        </div>
+        <div class="ai-list">
+            <div class="ai-card">
                 <h3>ChatGPT</h3>
                 <p>Best AI for text generation.</p>
             </div>
-            <div class="card">
-                <img src="https://source.unsplash.com/300x200/?robot,ai" alt="AI Tool">
-                <h3>Midjourney</h3>
+            <div class="ai-card">
+                <h3>MidJourney</h3>
                 <p>Top AI for image creation.</p>
-            </div>
-            <div class="card">
-                <img src="https://source.unsplash.com/300x200/?coding,ai" alt="AI Tool">
-                <h3>CodeWhisperer</h3>
-                <p>AI-powered coding assistant.</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 AI Hub. All rights reserved.</p>
-    </footer>
+    <!-- AI Courses -->
+    <section id="courses">
+        <h2>AI Courses</h2>
+        <div class="course-card">
+            <h3>Master AI Prompt Engineering</h3>
+            <p>Instructor: John Doe</p>
+            <button>Enroll Now</button>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- AI Job Board -->
+    <section id="jobs">
+        <h2>AI Job Board</h2>
+        <div class="job-list">
+            <div class="job-card">
+                <h3>AI Developer at OpenAI</h3>
+                <p>Location: Remote</p>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Voting System -->
+    <section id="voting">
+        <h2>Vote for Your Favorite AI</h2>
+        <div class="leaderboard">
+            <div class="ai-rank">
+                <h3>ChatGPT</h3>
+                <p>Votes: 2500</p>
+                <button>Upvote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompt Engineering AI -->
+    <section id="prompt-ai">
+        <h2>Prompt Engineering AI</h2>
+        <textarea placeholder="Enter your prompt..."></textarea>
+        <button>Generate</button>
+    </section>
+
 </body>
 </html>
