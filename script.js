@@ -1,10 +1,13 @@
-function grantAccess() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("signup-modal");
+    modal.style.display = "flex";
 
-    if (name && email) {
-        document.getElementById("signup-overlay").style.display = "none";
-    } else {
-        alert("Please enter your name and email to continue.");
-    }
-}
+    window.grantAccess = function() {
+        modal.style.display = "none";
+    };
+
+    const toggleTheme = document.getElementById("toggle-theme");
+    toggleTheme.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
+});
